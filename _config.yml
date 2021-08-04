@@ -127,7 +127,9 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://img35.51tietu.net/pic/2016-121321/20161213211517qchneot5fpv2300.jpg
+    - http://img2.a0bi.com/upload/ttq/20160102/1451714325454.jpg
+    - http://img.mp.itc.cn/upload/20170418/9ff5d1eed5db43d59e63a88bc330556c_th.jpeg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -142,14 +144,14 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: date # date/relative/date_format 日期/相对日期/模糊日期（比如超过1个月 就显示n个月前）
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_format: date # date/relative/date_format 日期/相对日期/模糊日期（比如超过1个月 就显示n个月前）
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
@@ -588,7 +590,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
@@ -606,6 +608,10 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
+    - Code make life better.
+    - 博学，审问，慎思，明辨，笃行
+    - 戒骄戒躁
+    - 天道酬勤
 
 # Loading Animation (加載動畫)
 preloader: false
