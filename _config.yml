@@ -169,7 +169,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -294,7 +294,6 @@ livere:
 
 # gitalk
 # https://github.com/gitalk/gitalk
-## 当前: gitalk 配置
 gitalk:
   client_id: 40d352b09238233a6c88
   client_secret: db953d71dbaf0d65873a7ace2e60635fd475285a
