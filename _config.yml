@@ -56,7 +56,13 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
+
+# search:
+#   path: search.xml
+#   field: post
+#   content: true
+#   template: ./search.xml
 
 # Math (數學)
 # --------------------------------------
@@ -201,7 +207,7 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: true
+  enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url: 
@@ -630,10 +636,10 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: 关注我
+      text: 访问主页
       link: https://github.com/smiecj
   card_announcement:
-    enable: true
+    enable: false
     content: 学习中
   card_recent_post:
     enable: true
